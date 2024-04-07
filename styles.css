@@ -1,0 +1,265 @@
+  :root {
+    --accent-color: #4c749a;
+    --invalid-color: rgb(25, 113, 195);
+  }
+  
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: "Hind Madurai", sans-serif;
+    color: rgba(27, 45, 94, 0.74);
+  }
+  
+  body {
+    display: flex;
+  }
+  
+  .left {
+    flex: 1;
+    background-image: url(assets/dev.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+  
+  .title {
+    background-color: rgba(45, 132, 190, 0.4);
+    height: 200px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .title img {
+    height: 100px;
+  }
+  
+  .left p {
+    text-align: center;
+    flex: 1;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    max-height: 50px;
+    font-size: 15px;
+    opacity: 0.6;
+    font-weight: 100;
+  }
+  
+  a {
+    color: white;
+  }
+  
+  .right {
+    flex: 2;
+    display: flex;
+    flex-flow: column;
+  }
+  
+  .header,
+  .footer {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 40px;
+    display: flex;
+    flex-flow: column;
+  }
+  
+  .header {
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  
+  .middle {
+    background-color: rgba(105, 143, 169, 0.4);
+    box-shadow: rgba(23, 119, 175, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex: 2;
+  }
+  
+  .footer {
+    gap: 20px;
+  }
+  
+  ul div {
+    display: flex;
+    flex-flow: row;
+    height: 60px;
+    gap: 50px;
+  }
+  
+  ul {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    justify-content: flex-start;
+    list-style: none;
+  }
+  
+  h1 {
+    color: white;
+    padding-top: 60px;
+    font-weight: 100;
+    font-size: 60px;
+    font-family: "Sephir", sans-serif;
+    font-style: italic;
+  }
+  
+  h2 {
+    font-size: clamp(1.2rem, 1.1vw, 2rem);
+    width: 30vw;
+    height: 20vh;
+    font-weight: 600;
+  }
+  
+  h3 {
+    height: 30px;
+    color: var(--accent-color);
+    margin-top: 25px;
+    padding-top: 10px;
+  }
+  
+  input,
+  input:required {
+    width: 300px;
+    height: 35px;
+    box-sizing: border-box;
+    border: solid 1px rgb(36, 106, 167);
+    border-radius: 5px;
+    background-color: rgb(252, 252, 252);
+  }
+  
+  input:focus {
+    outline: none;
+    border: solid 2px var(--accent-color);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+      rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  }
+  
+  input:focus:invalid,
+  label:invalid {
+    color: var(--invalid-color);
+    outline: none;
+    border: solid 2px var(--invalid-color);
+    background-color: rgba(232, 235, 255, 0.712);
+  }
+  
+  input:not(:placeholder-shown):invalid,
+  label:invalid {
+    color: var(--invalid-color);
+    outline: none;
+    border: solid 2px var(--invalid-color);
+  }
+  
+  label {
+    height: 30px;
+  }
+  
+  button {
+    height: 70px;
+    width: 190px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #505f6f, #5e8c8d);
+    font-weight: 600;
+    font-size: 0.9vw;
+    color: white;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  
+  button:active {
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  }
+  
+  .footer a {
+    color: var(--accent-color);
+  }
+  
+  #passwordMatch {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--invalid-color);
+    display: none;
+  }
+  
+  label {
+    font-weight: 500;
+  }
+  
+  .footer p {
+    font-weight: 500;
+    margin-left: 3px;
+  }
+
+  /* a{
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .form {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+  }
+
+  .form > * {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .form-label{
+    font-weight:500;
+    font-size: 20px;
+    display: block;
+    transition: all 0.5s;
+    transform: translateY(-3.4 rem)
+  }
+
+  .form-input {
+    border: 2px solid gray;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.2rem;
+    border-radius: 0.2rem;
+    width: 100%;
+    display: block;
+    transition: all 0.5s;
+    margin-top: 5%;
+    padding-right: 5%;
+  }
+  .form-input:focus {
+    transition: 0.2s;
+    outline: none;
+    border: 2px solid blue;
+  }
+
+  .form-input:placeholder-shown + .form-label {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  form{
+    padding-top: 3%;
+    width: 80%;
+    margin-left: 0%;
+    background-color: rgba(0, 0, 0, 0.034);
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .input> :last-child {
+    padding-left: 10%;
+  } */

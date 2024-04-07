@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+  </style>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+  <body>
+    <div class="left">
+      <div class="title"> <img src="assets/logo-no-background.png" alt="">
+          <h1>Dev</h1>
+      </div>
+      <p>Photo by <a href="https://unsplash.com/@ilyapavlov">llya Pavlov</a> on <a
+              href="https://unsplash.com/">Unsplash</a> </p>
+  </div>
+    <div class="right">
+        <div class="header">
+            <h2>This is not a real online service! You know you need something like this in your life to help realize your
+                deepest dreams.<br>
+                Sign up <em>now</em> to get started.<br>
+                <br>
+                You <em>know</em> you want to.
+            </h2>
+        </div>
+        <div class="middle">
+            <form action="" method="post">
+                <ul>
+                    <h3>Let's do this!</h3>
+                    <div>
+                        <li> <label for="first_name">First Name <strong><span
+                                        aria-label="required">*</span></strong></label><br>
+                            <input type="text" name="first_name" id="first_name" placeholder="ex. John" required>
+                        </li>
+                        <li>
+                            <label for="last_name">Last Name </label><br>
+                            <input type="text" name="last_name" id="last_name" placeholder="ex. Doe" required>
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <label for="email">Email <strong><span aria-label="required">*</span></strong></label><br>
+                            <input type="email" name="email" id="email" placeholder="ex. johndoe@gmail.com" required>
+                        </li>
+                        <li>
+                            <label for="phone_number">Phone Number </label><br>
+                            <input type="tel" name="phone_number" id="phone_number" placeholder="64+" required>
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <label for="password">Password <strong><span
+                                        aria-label="required">*</span></strong></label><br>
+                            <input type="password" name="password" id="password" placeholder="at least 8 characters with numbers and symbols" required>
+                            <p id="passwordMatch">* Passwords do not match</p>
+                        </li>
+                        <li>
+                            <label for="conf_password">Confirm Password <strong><span
+                                        aria-label="required">*</span></strong></label><br>
+                            <input type="password" name="password" id="conf_password" placeholder="at least 8 characters with numbers and symbols" required>
+                        </li>
+                    </div>
+                </ul>
+        </div>
+        <div class="footer">
+            <button type="submit"> Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
